@@ -1,0 +1,55 @@
+Read Me !!!
+
+To acees  the file the following.
+
+ 1. Download the  file from git hub.
+ 2. Navigate to the  folder bulletinApp in your terminal
+ 3. list the files in the folder
+
+
+ 4. type node <app.js> 
+ 5. Run localhost 3000
+ 6. create a user from the homepage
+ 7. use your login details to login inot the app
+ 8 write and view messages as follow.
+
+ NB!!!!!!!! 
+ NB!!!!!!!!
+ NB!!!!!!!!
+
+ 9. in your bulletinboard create two table with the structure below structure.
+ 10. on line  15 insert your  postgree password and use and password in the space provided
+ 11. run the app js in you terminal and it should work on the localhost3000.
+
+ 15 var connectionString = "bulletinboard:// POSTGRES_USER : POSTGRES_PASSWORD @localhost/bulletinboard";
+
+
+
+The table for the database names are created as follows.
+
+UserInfo database: name bulletuser;
+
+ id | firstname | lastname |          email          |  password  
+----+-----------+----------+-------------------------+------------
+  1 | Samuel    | Ampofo   | samuelsampene@yahoo.com | nycda2017
+  2 | James     | Octhere  | james@yahoo.com         | njames2017
+  3 | fran      | Ocean    | franko@gmail.com        | njames2017
+  4 | Kwame     | Manus    | kwame2017@gmail.com     | 
+  5 | Oheneba   | Donkor   | JKD@gmail.co            | JKD2017
+  6 | melvin    | roest    | melvinroest@gmail.com   | yolo
+
+
+ Message databas: bulletinmessage;
+ 
+
+ id |        title         |                                    message                                     |    date    | user_id 
+----+----------------------+--------------------------------------------------------------------------------+------------+---------
+  1 | just got stuff going | I have been working this shit all night                                        | 2017-05-29 |       1
+  2 | just got stuff going | I have been working this shit all night                                        | 2017-05-30 |       1
+  3 | with Omar            | a worthy helping hand                                                          | 2017-05-30 |       2
+  4 | the must owrk        | we diod aour fucking bets out here fgive us some luck creature in the universe | 2017-05-29 |        
+  5 | the must owrk        | we diod aour fucking bets out here fgive us some luck creature in the universe | 2017-05-29 |        
+  6 | the must owrk        | we diod aour fucking bets out here fgive us some luck creature in the universe | 2017-05-29 |        
+  7 | the must owrk        | we diod aour fucking bets out here fgive us some luck creature in the universe | 2017-05-29 |        
+  8 | the must owrk        | we diod aour fucking bets out here fgive us some luck creature in the universe | 2017-05-29 |        
+  9 | the must owrk        | we diod aour fucking bets out here fgive us some luck creature in the universe | 2017-05-29 |    

@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  head
+    title bulletinboard
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    script(type='text/javascript', src='js/style.js')
+      
+  nav.navbar.navbar-default
+    .container-fluid
+    .navbar-header
+      a.navbar-brand(href='http://localhost:3000/home') NYCDA Bulleting Board
+    ul.nav.navbar-nav
+      li
+        a(href='http://localhost:3000/home') your bulletin board
+      li.active
+        a(href='http://localhost:3000/messages') Write a message
+      li
+        a(href='http://localhost:3000') logout
+  body
+     .container
+        #outputmeesage
+        .avatar
+
+          img(src='assets/logo.png', alt='the bulletinboard', style='width:100px;height:100px;')
+        .form-box
+          br
+          h4 write your new message post here
+          form(action='/messages', method='POST')
+            input(name='messageTittle',type='text', placeholder='Message Tittle')
+            input(name='messAge',type='text', placeholder='Type your message here')
+            input(name='date',type='date', placeholder='date')
+            br
+            button.btn.btn-info.btn-block.login(type='submit') send
+
+

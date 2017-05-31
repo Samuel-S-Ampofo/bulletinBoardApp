@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+  head
+    title bulletinboard
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    script(type='text/javascript', src='js/style.js')
+
+  nav.navbar.navbar-default
+    .container-fluid
+    .navbar-header
+      a.navbar-brand(href='http://localhost:3000/home') NYCDA Bulleting Board
+    ul.nav.navbar-nav
+      li.active
+        a(href='http://localhost:3000/home') your bulletin board
+      li
+        a(href='http://localhost:3000/messages') Write a message
+      li
+        a(href='http://localhost:3000') logout 
+  body
+
+    .container
+      .notice.notice-success
+        h1 WELKOM TO NYCDA BULLETIN BOARD          
+    .header-invoice-status
+    p #{loggedInMessage}
+
+  each message in messages
+    .container
+      .notice.notice-info
+        strong Tittle
+        |  #{message.title} 
+        br
+        strong Message
+        |  #{message.message}
+        br
+        strong Date
+        |  #{message.date}

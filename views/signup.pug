@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  head
+    title bulletinboard
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    script(type='text/javascript', src='js/style.js')
+  body
+    .container
+      .login-container
+        #output
+        .avatar
+          img(src='assets/logo.png', alt='the bulletinboard', style='width:100px;height:100px;')
+        .form-box
+          form(action='/signup', method='POST')
+            input(name='firstName', type='text', placeholder='First Name')
+            input(name='lastName',type='text', placeholder='Last Name')
+            input(name='email',type='text', placeholder='E-mail')
+            input(name='password',type='password', placeholder='password')
+            button.btn.btn-info.btn-block.login(type='submit') Signup
